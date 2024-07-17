@@ -1,9 +1,10 @@
+import Portfolio from "~/components/portfolio-section";
 
 
 export default function Homr(): JSX.Element {
   return (
-    <main className="min-h-screen dark:bg-darkGrey bg-white">
-<div className="min-h-screen"></div>
+    <main className=" dark:bg-darkGrey bg-white">
+<Portfolio />
     </main>
   );
 }

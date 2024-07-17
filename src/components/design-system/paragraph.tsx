@@ -18,7 +18,7 @@ const Paragraph: React.FC<ParagraphProps> = ({
   const ParagraphStyles: { [key: string]: string } = {
     "para-1": "text-para-1",
     "para-2": "text-para-2",
-    "para-3": "te1t-para-3",
+    "para-3": "text-xs md:te1t-para-3",
     "para-4": "text-para-4",
   };
 

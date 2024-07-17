@@ -68,7 +68,7 @@ const FloatingNavbar = () => {
 				transition={{
 					duration: 0.2
 				}}
-				className="fixed inset-x-0 top-10 z-[5000] mx-auto hidden max-w-fit items-center justify-center space-x-4 rounded-full border border-black/[0.7] dark:border-white/[0.2] bg-white dark:bg-secondary py-2 pl-8  pr-2 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:flex"
+				className="fixed inset-x-0 top-10 z-[5000] mx-auto hidden max-w-fit items-center justify-center space-x-4 rounded-full border border-black/[0.7] dark:border-white/[0.2] bg-white dark:bg-black/30 py-2 pl-8  pr-2 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:flex"
 			>
 				{navItems.map((navItem: any, idx: number) => (
 					<Link
