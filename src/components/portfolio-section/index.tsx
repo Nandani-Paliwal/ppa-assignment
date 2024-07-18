@@ -25,37 +25,35 @@ export default function Portfolio() {
 		{
 			logo: '/assets/portfolio-logo/logo7.svg'
 		}
-
 	]
 
 	return (
-		<div className="mx-auto flex max-w-7xl flex-col gap-6 overflow-hidden py-16 px-4 md:px-6 text-center ">
-			<div className="flex flex-col items-center justify-center gap-4">
-				<Heading type='h2' className=" text-darkGrey ">
+		<div className="mx-auto flex max-w-7xl flex-col gap-6 overflow-hidden px-4 py-16 text-center md:px-6 ">
+			<div className="flex flex-col items-center justify-center  gap-4">
+				<Heading type="h2" className=" text-darkGrey dark:text-white">
 					Our Clients
 				</Heading>
-				<Paragraph type='para-3' weight='normal' className='text-grey '>
-				We have been working with some Fortune 500+ clients
+				<Paragraph type="para-3" weight="normal" className="text-grey  ">
+					We have been working with some Fortune 500+ clients
 				</Paragraph>
 			</div>
 			{/* desktop */}
-			<div className="text-secondary mx-auto hidden md:flex w-full">
-					<div className="mx-auto flex items-center justify-between gap-4 w-4/5">
-						{logoList.map((item, id) => (
-							
-								<Image
-									src={item.logo}
-									alt="client logo"
-									height={1000}
-									width={1000}
-									className="h-10 w-auto"
-								/>
-						
-						))}
-					</div>
+			<div className="mx-auto hidden w-full text-secondary md:flex">
+				<div className="mx-auto flex w-4/5 items-center justify-between gap-4">
+					{logoList.map((item, index) => (
+						<Image
+							src={item.logo}
+							alt="client logo"
+							height={1000}
+							width={1000}
+							className="h-10 w-auto"
+							key={index}
+						/>
+					))}
 				</div>
-				{/* mobile */}
-			<div className="flex md:hidden flex-row overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
+			</div>
+			{/* mobile */}
+			<div className="flex flex-row overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] md:hidden">
 				<div className="flex flex-shrink-0 animate-slide items-center justify-around  whitespace-nowrap">
 					{logoList.map((logoitem, index) => (
 						<div className="slide px-4 opacity-75 hover:opacity-100" key={index}>
