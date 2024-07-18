@@ -1,4 +1,4 @@
-import Button from '../design-system/button'
+
 import { Heading } from '../design-system/heading'
 import { Paragraph } from '../design-system/paragraph'
 import Image from 'next/image'

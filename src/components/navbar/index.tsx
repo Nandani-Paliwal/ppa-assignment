@@ -77,6 +77,7 @@ export default function Navbar() {
 					</Link>
 					{/* Desktop Links */}
 					<div className="hidden items-center justify-center lg:flex lg:gap-10 ">
+					 {/* @ts-ignore */}
 						<Navlinks />
 					</div>
 

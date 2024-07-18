@@ -40,6 +40,7 @@ const FloatingNavbar = () => {
 	useMotionValueEvent(scrollYProgress, 'change', current => {
 		// Check if current is not undefined and is a number
 		if (typeof current === 'number') {
+			// @ts-ignore
 			const direction = current - scrollYProgress.getPrevious()
 
 			if (scrollYProgress.get() < 0.05) {

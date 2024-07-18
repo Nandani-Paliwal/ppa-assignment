@@ -1,6 +1,3 @@
-import { EyeIcon, LightBulbIcon, StarIcon } from '@heroicons/react/24/solid'
-import Link from 'next/link'
-import Button from '../design-system/button'
 import { type SVGAttributes } from 'react'
 import { Heading } from '../design-system/heading'
 import { Paragraph } from '../design-system/paragraph'

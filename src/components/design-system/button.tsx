@@ -1,7 +1,7 @@
 import { type FC, type ReactNode, type ButtonHTMLAttributes, type DetailedHTMLProps } from 'react'
 import { cva, type VariantProps } from "class-variance-authority";
 import { clsx } from "clsx";
-import Link from "next/link";
+
 
 const buttonClassVariants = cva(
   "inline-flex min-w-max items-center gap-2 flex-shrink-0 dark:ring-offset-darkGrey font-normal focus:outline-none focus:ring-2  cursor-pointer ",
@@ -69,7 +69,6 @@ extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonEle
   fullWidth?: boolean;
   loading?: boolean;
   disabled?: boolean;
-  href?: string;
   className?: string;
 }
 const Button: FC<ButtonProps> = ({
@@ -80,7 +79,6 @@ const Button: FC<ButtonProps> = ({
   iconPosition = "right",
   loading = false,
   disabled = false,
-  href,
   children,
   className,
   ...props

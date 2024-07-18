@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  KeyframeOptions,
+  type KeyframeOptions,
   animate,
   useInView,
   useIsomorphicLayoutEffect,

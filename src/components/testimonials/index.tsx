@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import type React from 'react'
 import { Heading } from '../design-system/heading'
 import { Paragraph } from '../design-system/paragraph'
 

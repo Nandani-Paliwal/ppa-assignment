@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import type React from 'react'
+import  React from 'react'
 import { Heading } from '../design-system/heading'
 import { Paragraph } from '../design-system/paragraph'
 import Button from '../design-system/button'

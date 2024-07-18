@@ -12,7 +12,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -40,17 +40,13 @@
     "lint-staged.config.js",
     "**/*.ts",
     "**/*.tsx",
+    "src/*",
+		"tailwind.config.ts",
     ".next/types/**/*.ts",
     ".eslintrc.js",
     "prettier.config.js",
     "next.config.js",
     "postcss.config.js",
-    "src/components/navbar/index.tsx",
-    "src/app/hire/[questionSlug]",
-    "src/components/works-and-products",
-    "src/Components/project-section/projects/descriptions/index.tsx",
-    "src/Components/project-section/projects/titles/index.tsx",
-    "src/Components/project-section/smooth-scroll/index.jsx"
   ],
   "exclude": [
     "node_modules"
