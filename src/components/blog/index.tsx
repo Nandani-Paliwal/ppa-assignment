@@ -45,13 +45,13 @@ export default function Blog() {
 								className="rounded-lg"
 							/>
 							<div className="-mt-10 flex flex-col items-center justify-center text-center  rounded-lg bg-silver p-4 gap-4 shadow-lg max-w-[230px] md:max-w-[317px]">
-								<Heading as="h4" type="h4" className=" text-grey">
+								<Heading as="h4" type="h4" className=" text-grey fomt-medium">
 									{item.title}
 								</Heading>
 								<Link href="" className="flex items-center gap-1">
-									<Heading as="h4" type="h4" className="text-primary">
+									<Paragraph type="para-2" className="text-primary">
 										Readmore
-									</Heading>
+									</Paragraph>
 									<span>
 										<svg
 											width="24"

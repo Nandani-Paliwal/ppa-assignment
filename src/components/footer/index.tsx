@@ -246,12 +246,12 @@ export default function Footer() {
 								Stay up to date
 							</Heading>
 
-							<div className="flex flex-row gap-2 rounded-lg bg-gray-200 px-3 py-3 dark:bg-secondary w-fit">
+							<div className="flex flex-row gap-2 rounded-lg bg-[#E9ECF0] px-3 py-1 dark:bg-[#262626] w-fit">
 								<input
 									id="search"
 									name="search"
 									// onChange={() => ()												}}
-									className="block rounded-lg bg-transparent text-para-3  font-normal placeholder-darkGrey caret-primary placeholder:font-normal focus:text-darkGrey  focus:placeholder-primary focus:outline-none focus:placeholder:text-darkGrey dark:placeholder-lightGrey "
+									className="block rounded-lg bg-transparent text-para-3 py-2 font-normal placeholder-darkGrey caret-primary placeholder:font-normal focus:text-lightGrey  focus:placeholder-primary focus:outline-none focus:placeholder:text-darkGrey dark:placeholder-lightGrey text-lightGrey"
 									placeholder="Your email address"
 									type="search"
 								/>

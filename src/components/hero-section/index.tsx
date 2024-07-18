@@ -46,7 +46,7 @@ const DRAG_BUFFER = 50
 const SPRING_OPTIONS = {
 	type: 'spring',
 	mass: 3,
-	stiffness: 400,
+	stiffness: 200,
 	damping: 50
 }
 
@@ -115,9 +115,6 @@ const Content = ({ contentIndex }: { contentIndex: number }) => {
 				return (
 					<motion.div
 						key={idx}
-						animate={{
-							scale: contentIndex === idx ? 0.95 : 0.85
-						}}
 						transition={SPRING_OPTIONS}
 						className=" flex w-full flex-shrink-0 items-center overflow-hidden"
 					>
