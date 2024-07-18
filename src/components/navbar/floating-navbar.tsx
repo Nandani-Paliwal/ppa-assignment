@@ -8,27 +8,27 @@ import Link from 'next/link'
 const FloatingNavbar = () => {
 	const navItems = [
 		{
-			label: 'Home',
+			name: 'Home',
 			href: '/'
 		},
 		{
-			label: 'Service',
+			name: 'Service',
 			href: '/#service'
 		},
 		{
-			label: 'Feature',
+			name: 'Feature',
 			href: '/'
 		},
 		{
-			label: 'Product',
+			name: 'Product',
 			href: '/'
 		},
 		{
-			label: 'Testimonial',
+			name: 'Testimonial',
 			href: '/#testimonial'
 		},
 		{
-			label: 'FAQ',
+			name: 'FAQ',
 			href: '/'
 		},
 	]
