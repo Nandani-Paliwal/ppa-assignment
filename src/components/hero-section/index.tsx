@@ -4,6 +4,7 @@ import React, { type Dispatch, type SetStateAction, useEffect, useState } from '
 import { motion, useMotionValue } from 'framer-motion'
 import { Heading } from '../design-system/heading'
 import { Paragraph } from '../design-system/paragraph'
+import Button from '../design-system/button'
 
 const content = [
 	{
@@ -82,7 +83,7 @@ const HeroSection = () => {
 	}
 
 	return (
-		<section className="relative flex flex-col items-center overflow-hidden  bg-gray-950 px-5 py-8  md:px-10 md:py-20 lg:px-16">
+		<section className="relative flex flex-col items-center overflow-hidden bg-silver gap-10 px-5 md:px-10 pt-20 pb-8 md:pt-36 lg:px-16">
 			<motion.div
 				drag="x"
 				dragConstraints={{
@@ -97,7 +98,7 @@ const HeroSection = () => {
 				}}
 				transition={SPRING_OPTIONS}
 				onDragEnd={onDragEnd}
-				className="flex cursor-grab items-center active:cursor-grabbing bg-green-300"
+				className="flex cursor-grab items-center active:cursor-grabbing"
 			>
 				<Content contentIndex={contentIndex} />
 			</motion.div>
@@ -118,18 +119,21 @@ const Content = ({ contentIndex }: { contentIndex: number }) => {
 							scale: contentIndex === idx ? 0.95 : 0.85
 						}}
 						transition={SPRING_OPTIONS}
-						className=" flex flex-col items-center bg-pink-600"
+						className=" flex w-screen lg:flex-shrink-0 items-center over-flow-hidden"
 					>
-						<div className="item-center mx-auto flex max-w-7xl flex-col  justify-center gap-8 lg:items-start lg:justify-start">
-							<div className="item-center flex flex-col justify-center gap-3 lg:items-start lg:justify-start">
-								<Heading as="h1" type="h1" className="text-darkGrey">
-									{item.title}
-								</Heading>
-								<Paragraph type="para-2" className="text-lightGrey">
-									{item.description}
-								</Paragraph>
+						<div className=" mx-auto flex flex-col lg:flex-row max-w-7xl w-full items-center justify-center gap-10 lg:justify-between">
+							<div className="items-center flex flex-col justify-center gap-10 lg:items-start lg:justify-start overflow-hidden">
+								<div className="items-center lg:text-left text-center flex flex-col justify-center gap-3  lg:items-start lg:justify-start">
+									<Heading as="h1" type="h1" className="text-darkGrey">
+										{item.title}
+									</Heading>
+									<Paragraph type="para-2" className="text-lightGrey">
+										{item.description}
+									</Paragraph>
+								</div>
+								<Button size='medium'>Register</Button>
 							</div>
-							<div>
+							<div className="">
 								<Image src={item.imageSrc} alt="" height={407} width={391} />
 							</div>
 						</div>

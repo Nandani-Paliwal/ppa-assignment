@@ -17,7 +17,7 @@ const Feature: React.FC<{ title: string; description: string; image: string }> =
 				</div>
 				<div className="flex flex-col justify-center items-center lg:items-start lg:justify-starttart gap-8 text-center lg:text-left">
 					<div className='flex flex-col gap-4  justify-center items-center lg:items-start lg:justify-starttart'>
-						<Heading as="h2" type="h2" className="text-darkGrey max-w-xl">
+						<Heading as="h2" type="h2" className="text-darkGrey dark:text-white max-w-xl">
 							{title}
 						</Heading>
 						<Paragraph type="para-3" className="text-grey max-w-xl">

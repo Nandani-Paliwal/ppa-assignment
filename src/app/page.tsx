@@ -1,9 +1,7 @@
-
 import Blog from '~/components/blog'
 import CtaSection from '~/components/cta-section'
 import Feature from '~/components/feature-section'
 import HeroSection from '~/components/hero-section'
-import SwipeCarousel from '~/components/hero-section/hero'
 import Portfolio from '~/components/portfolio-section'
 import StatsSection from '~/components/stats-section'
 import Testimonials from '~/components/testimonials'
@@ -11,9 +9,8 @@ import UspSection from '~/components/usp-section'
 
 export default function Homr(): JSX.Element {
 	return (
-		<main className=" bg-white dark:bg-darkGrey">
+		<main className=" bg-white">
 			<HeroSection />
-      <SwipeCarousel />
 			<Portfolio />
 			<UspSection />
 			<Feature
