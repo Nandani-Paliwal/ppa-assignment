@@ -8,10 +8,10 @@ import { type SVGAttributes } from 'react'
 const navigation = {
 	company: [
 		{ name: 'About us', href: '#' },
-		{ name: 'Blog', href: '#' },
+		{ name: 'Blog', href: '/#blog' },
 		{ name: 'Contact us', href: '#' },
 		{ name: 'Price', href: '#' },
-		{ name: 'Testimonials', href: '#' }
+		{ name: 'Testimonials', href: '/#testimonial' }
 	],
 	support: [
 		{ name: 'Help center', href: '#' },
@@ -139,7 +139,7 @@ const navigation = {
 
 export default function Footer() {
 	return (
-		<footer className="bg-secondary dark:bg-dark-600 border-t " aria-labelledby="footer-heading">
+		<footer className="bg-secondary dark:bg-dark-600 " aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">
 				Footer
 			</h2>

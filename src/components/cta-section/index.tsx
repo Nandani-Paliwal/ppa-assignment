@@ -3,9 +3,9 @@ import { Heading } from '../design-system/heading'
 
 export default function CtaSection() {
 	return (
-		<section className="flex items-center bg-silver px-5 py-8  md:px-10 md:py-20 lg:px-16">
+		<section className="flex items-center bg-silver dark:bg-dark-400 px-5 py-8  md:px-10 md:py-20 lg:px-16">
 			<div className="mx-auto  flex w-full max-w-7xl flex-col justify-center items-center gap-5">
-				<Heading as="h2" type="h1" className="text-secondary max-w-3xl text-center">
+				<Heading as="h2" type="h1" className="text-secondary dark:text-darkText max-w-3xl text-center">
 					Pellentesque suscipit fringilla libero eu.
 				</Heading>
 				<Button size='medium'

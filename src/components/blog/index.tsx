@@ -22,13 +22,13 @@ export default function Blog() {
 		}
 	]
 	return (
-		<section className=" flex items-center px-5 py-8 md:px-10  md:py-20 lg:px-16">
+		<section id='blog' className=" flex items-center px-5 py-8 md:px-10  md:py-20 lg:px-16 dark:bg-dark-300">
 			<div className="mx-auto  flex w-full max-w-7xl flex-col items-center gap-10 ">
 				<div className="flex flex-col items-center justify-center gap-4 text-center">
 					<Heading as="h2" type="h2" className=" text-darkGrey dark:text-white">
 						Caring is the new marketing
 					</Heading>
-					<Paragraph type="para-2" className="max-w-2xl  text-grey">
+					<Paragraph type="para-2" className="max-w-2xl  text-grey dark:text-darkText">
 						The Nexcent blog is the best place to read about the latest membership
 						insights, trends and more. See who's joining the community, read about how
 						our community are increasing their membership income and lot's more.{' '}
@@ -44,8 +44,8 @@ export default function Blog() {
 								width={368}
 								className="rounded-lg"
 							/>
-							<div className="-mt-10 flex flex-col items-center justify-center text-center  rounded-lg bg-silver p-4 gap-4 shadow-lg max-w-[230px] md:max-w-[317px]">
-								<Heading as="h4" type="h4" className=" text-grey fomt-medium">
+							<div className="-mt-10 flex flex-col items-center justify-center text-center  rounded-lg bg-silver dark:bg-dark-250 p-4 gap-4 shadow-lg dark:shadow-none max-w-[230px] md:max-w-[317px]">
+								<Heading as="h4" type="h4" className=" text-grey dark:text-darkText fomt-medium">
 									{item.title}
 								</Heading>
 								<Link href="" className="flex items-center gap-1">

@@ -10,8 +10,8 @@ const Feature: React.FC<{ title: string; description: string; image: string }> =
 	image
 }) => {
 	return (
-		<section className="mx-auto flex max-w-7xl items-center px-5 py-8 md:px-10  md:py-20 lg:px-16">
-			<div className="flex w-full flex-col items-center justify-center gap-5 lg:justify-between lg:flex-row">
+		<section className="flex items-center px-5 py-8 md:px-10  md:py-20 lg:px-16 dark:bg-dark-300">
+			<div className="mx-auto  max-w-7xl flex w-full flex-col items-center justify-center gap-5 lg:justify-between lg:flex-row">
 				<div className="">
 					<Image src={image} alt="" height={328} width={441} />
 				</div>

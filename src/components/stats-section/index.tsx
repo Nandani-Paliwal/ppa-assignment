@@ -104,14 +104,14 @@ export default function StatsSection() {
 		}
 	]
 	return (
-		<section className="flex items-center bg-silver px-5 py-8  md:px-10 md:py-20 lg:px-16">
+		<section className="flex items-center bg-silver dark:bg-dark-400 px-5 py-8  md:px-10 md:py-20 lg:px-16">
 			<div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-10 lg:gap-5 lg:flex-row lg:justify-between">
 				<div className="flex flex-col  items-center justify-center lg:items-start lg:justify-start gap-4 lg:gap-2 text-center lg:text-left">
-					<Heading as="h2" type="h2" className=" text-darkGrey max-w-md md:max-w-none">
+					<Heading as="h2" type="h2" className=" text-darkGrey dark:text-white max-w-md md:max-w-none">
 						Helping a local{' '}
-						<span className="md:block text-primary">business reinvent itself</span>
+						<span className="md:block text-primary ">business reinvent itself</span>
 					</Heading>
-					<Paragraph type="para-2" className="text-grey">
+					<Paragraph type="para-2" className="text-grey dark:text-darkText">
 						We reached here with our hard work and dedication
 					</Paragraph>
 				</div>
@@ -122,9 +122,9 @@ export default function StatsSection() {
 								<item.icon />
 							</div>
 							<div className="flex flex-col items-start justify-start text-left">
-								<AnimatedCounter from={0} to={item.to}  className="font-bold text-h3 font-mono text-darkGrey" />
+								<AnimatedCounter from={0} to={item.to}  className="font-bold text-h3 font-mono text-darkGrey dark:text-white" />
 							
-								<Paragraph type="para-2" className="text-grey">
+								<Paragraph type="para-2" className="text-grey dark:text-darkText">
 									{item.title}
 								</Paragraph>
 							</div>

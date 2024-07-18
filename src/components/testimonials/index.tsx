@@ -26,7 +26,7 @@ export default function Testimonials() {
 	]
 
 	return (
-		<section className="bg-silver flex items-center px-5 py-8 md:px-10  md:py-20 lg:px-16 overflow-hidden">
+		<section id='testimonial' className="bg-silver dark:bg-dark-400 flex items-center px-5 py-8 md:px-10  md:py-20 lg:px-16 overflow-hidden">
 			<div className="mx-auto  max-w-7xl flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-between">
 				<div className="">
 					<Image
@@ -34,12 +34,12 @@ export default function Testimonials() {
 						alt=""
 						height={326}
 						width={326}
-						className="shadow-lg"
+						className="shadow-lg dark:shadow-none"
 					/>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-8 lg:items-start lg:justify-start">
 					<div className="flex flex-col items-center justify-center gap-3 text-center lg:items-start lg:justify-start lg:text-left ">
-						<Paragraph type="para-2" className="lg:max-w-3xl font-medium text-grey">
+						<Paragraph type="para-2" className="lg:max-w-3xl font-medium text-grey dark:text-darkText">
 							Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
 							sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
 							Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
@@ -55,7 +55,7 @@ export default function Testimonials() {
 							<Heading as="h4" type="h4" className="max-w-xl text-primary">
 								Tim Smith
 							</Heading>
-							<Paragraph type="para-2" className="text-lightGrey">
+							<Paragraph type="para-2" className="text-lightGrey dark:text-[#5C5C5C]">
 								British Dragon Boat Racing Association
 							</Paragraph>
 						</div>

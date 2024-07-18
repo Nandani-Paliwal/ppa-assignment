@@ -83,7 +83,7 @@ const HeroSection = () => {
 	}
 
 	return (
-		<section className="relative flex flex-col items-center overflow-hidden bg-silver gap-10 px-5 md:px-10 pt-12 pb-8 md:pt-36 lg:px-16">
+		<section className="relative flex flex-col items-center overflow-hidden bg-silver dark:bg-dark-400 gap-10 px-5 md:px-10 pt-12 pb-8 md:pt-36 lg:px-16">
 			<motion.div
 				drag="x"
 				dragConstraints={{
@@ -121,10 +121,10 @@ const Content = () => {
 						<div className=" mx-auto flex flex-col lg:flex-row lg:max-w-7xl max-w-[280px]  w-full items-center justify-center gap-10 lg:justify-between ">
 							<div className="items-center flex flex-col justify-center gap-10 lg:items-start lg:justify-start overflow-hidden">
 								<div className="items-center lg:text-left text-center flex flex-col justify-center gap-3  lg:items-start lg:justify-start">
-									<Heading as="h1" type="h1" className="text-darkGrey">
+									<Heading as="h1" type="h1" className="text-darkGrey dark:text-white">
 										{item.title}
 									</Heading>
-									<Paragraph type="para-2" className="text-lightGrey ">
+									<Paragraph type="para-2" className="text-lightGrey dark:text-darkText">
 										{item.description}
 									</Paragraph>
 								</div>

@@ -6,7 +6,7 @@ export const navLinksData = [
 	},
 	{
 		label: 'Service',
-		href: '/'
+		href: '/#service'
 	},
 	{
 		label: 'Feature',
@@ -18,7 +18,7 @@ export const navLinksData = [
 	},
 	{
 		label: 'Testimonial',
-		href: '/'
+		href: '/#testimonial'
 	},
 	{
 		label: 'FAQ',

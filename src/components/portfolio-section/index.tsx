@@ -28,59 +28,61 @@ export default function Portfolio() {
 	]
 
 	return (
-		<div className="mx-auto flex max-w-7xl flex-col gap-10 overflow-hidden px-4 py-16 text-center md:px-6 ">
-			<div className="flex flex-col items-center justify-center text-center gap-4">
-				<Heading as="h2" type="h2" className=" text-darkGrey dark:text-white">
-					Our Clients
-				</Heading>
-				<Paragraph type="para-2" className="text-grey">
-					We have been working with some Fortune 500+ clients
-				</Paragraph>
-			</div>
-			{/* desktop */}
-			<div className="mx-auto hidden w-full text-secondary md:flex">
-				<div className="mx-auto flex w-4/5 items-center justify-between gap-4">
-					{logoList.map((item, index) => (
-						<Image
-							src={item.logo}
-							alt="client logo"
-							height={48}
-							width={48}
-							className="h-10 w-auto"
-							key={index}
-						/>
-					))}
+		<section className=" dark:bg-dark-300 flex-col gap-10 overflow-hidden px-4 py-16 text-center  md:px-6">
+			<div className="mx-auto flex max-w-7xl flex-col gap-10 ">
+				<div className="flex flex-col items-center justify-center gap-4 text-center">
+					<Heading as="h2" type="h2" className=" text-darkGrey dark:text-white">
+						Our Clients
+					</Heading>
+					<Paragraph type="para-2" className="text-grey">
+						We have been working with some Fortune 500+ clients
+					</Paragraph>
 				</div>
-			</div>
-			{/* mobile */}
-			<div className="flex flex-row overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] md:hidden">
-				<div className="flex flex-shrink-0 animate-slide items-center justify-around  whitespace-nowrap">
-					{logoList.map((logoitem, index) => (
-						<div className="slide px-4 opacity-75 hover:opacity-100" key={index}>
+				{/* desktop */}
+				<div className="mx-auto hidden w-full text-secondary md:flex">
+					<div className="mx-auto flex w-4/5 items-center justify-between gap-4">
+						{logoList.map((item, index) => (
 							<Image
-								src={logoitem.logo}
-								alt="client-logo"
+								src={item.logo}
+								alt="client logo"
 								height={48}
 								width={48}
 								className="h-10 w-auto"
+								key={index}
 							/>
-						</div>
-					))}
+						))}
+					</div>
 				</div>
-				<div className="flex flex-shrink-0 animate-slide items-center justify-around  whitespace-nowrap">
-					{logoList.map((logoitem, index) => (
-						<div className="slide px-4 opacity-75 hover:opacity-100" key={index}>
-							<Image
-								src={logoitem.logo}
-								alt="client-logo"
-								height={48}
-								width={48}
-								className="h-10 w-auto"
-							/>
-						</div>
-					))}
+				{/* mobile */}
+				<div className="flex flex-row overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] md:hidden">
+					<div className="flex flex-shrink-0 animate-slide items-center justify-around  whitespace-nowrap">
+						{logoList.map((logoitem, index) => (
+							<div className="slide px-4 opacity-75 hover:opacity-100" key={index}>
+								<Image
+									src={logoitem.logo}
+									alt="client-logo"
+									height={48}
+									width={48}
+									className="h-10 w-auto"
+								/>
+							</div>
+						))}
+					</div>
+					<div className="flex flex-shrink-0 animate-slide items-center justify-around  whitespace-nowrap">
+						{logoList.map((logoitem, index) => (
+							<div className="slide px-4 opacity-75 hover:opacity-100" key={index}>
+								<Image
+									src={logoitem.logo}
+									alt="client-logo"
+									height={48}
+									width={48}
+									className="h-10 w-auto"
+								/>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
