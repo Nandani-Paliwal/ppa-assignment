@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { type SVGAttributes } from 'react'
 
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
 	company: [
 		{ name: 'About us', href: '#' },
@@ -140,7 +139,7 @@ const navigation = {
 
 export default function Footer() {
 	return (
-		<footer className="bg-silver dark:bg-black/30 border-t " aria-labelledby="footer-heading">
+		<footer className="bg-secondary dark:bg-dark-600 border-t " aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">
 				Footer
 			</h2>
@@ -154,33 +153,24 @@ export default function Footer() {
 							title="home"
 						>
 							<Image
-								src={'/assets/logo/logo.svg'}
-								draggable={false}
-								alt="Nexcent-logo"
-								height={20}
-								width={110}
-								className="flex dark:hidden"
-							/>
-							<Image
 								src={'/assets/logo/dark-logo.svg'}
 								draggable={false}
 								alt="Nexcent-logo"
 								height={20}
 								width={110}
-								className="hidden dark:flex"
 							/>
 						</Link>
 						<div className="flex flex-col gap-1">
 							{' '}
 							<Paragraph
 								type="para-3"
-								className="text-base text-lightGrey dark:text-silver"
+								className="text-base text-silver"
 							>
 								Copyright &copy; {new Date().getFullYear()} Nexcent ltd.
 							</Paragraph>
 							<Paragraph
 								type="para-3"
-								className="text-base text-lightGrey dark:text-silver"
+								className="text-base text-silver"
 							>
 								All rights reserved.
 							</Paragraph>
@@ -190,7 +180,7 @@ export default function Footer() {
 								<Link
 									key={item.name}
 									href={item.href}
-									className="text-darkGrey dark:text-white"
+									className="text-white"
 								>
 									<span className="sr-only">{item.name}</span>
 									<item.icon className="" aria-hidden="true" />
@@ -201,7 +191,7 @@ export default function Footer() {
 					<div className="mt-12 flex flex-col md:grid md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 						<div className="grid grid-cols-2 md:gap-8">
 							<div>
-								<Heading type="h4" className="text-darkGrey dark:text-white">
+								<Heading type="h4" className=" text-white">
 									Company
 								</Heading>
 								<ul role="list" className="mt-4 space-y-4">
@@ -211,7 +201,7 @@ export default function Footer() {
 												<Paragraph
 													type="para-3"
 													weight="normal"
-													className="text-lightGrey hover:text-blueGrey dark:text-silver"
+													className="text-silver"
 												>
 													{item.name}
 												</Paragraph>
@@ -221,7 +211,7 @@ export default function Footer() {
 								</ul>
 							</div>
 							<div className="">
-								<Heading type="h4" className="text-darkGrey dark:text-white">
+								<Heading type="h4" className="text-white">
 									Support
 								</Heading>
 								<ul role="list" className="mt-4 space-y-4">
@@ -231,7 +221,7 @@ export default function Footer() {
 												<Paragraph
 													type="para-3"
 													weight="normal"
-													className="text-lightGrey hover:text-blueGrey dark:text-silver"
+													className="text-silver"
 												>
 													{item.name}
 												</Paragraph>
@@ -242,20 +232,20 @@ export default function Footer() {
 							</div>
 						</div>
 						<div className="flex flex-col gap-4">
-							<Heading type="h4" className="text-darkGrey dark:text-white">
+							<Heading type="h4" className=" text-white">
 								Stay up to date
 							</Heading>
 
-							<div className="flex flex-row gap-2 rounded-lg bg-[#E9ECF0] px-3 py-1 dark:bg-[#262626] w-fit">
+							<div className="flex flex-row gap-2 rounded-lg  px-3 py-1 bg-dark-25 dark:bg-dark-50 w-fit">
 								<input
 									id="search"
 									name="search"
 									// onChange={() => ()												}}
-									className="block rounded-lg bg-transparent text-para-3 py-2 font-normal placeholder-darkGrey caret-primary placeholder:font-normal focus:text-lightGrey  focus:placeholder-primary focus:outline-none focus:placeholder:text-darkGrey dark:placeholder-lightGrey text-lightGrey"
+									className="block rounded-lg bg-transparent focus:bg-transparent text-para-3 py-2 font-normal caret-primary placeholder:font-normal focus:text-lightGrey focus:outline-none placeholder-lightGrey text-lightGrey"
 									placeholder="Your email address"
 									type="search"
 								/>
-								<button className='w-fit text-primary'>
+								<button className='w-fit text-white'>
 									<svg
 										width="18"
 										height="18"
