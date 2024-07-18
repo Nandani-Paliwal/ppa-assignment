@@ -19,8 +19,8 @@ const content = [
 	{
 		title: (
 			<>
-				Tools to Streamline{' '}
-				<span className="block text-primary">Your Business Operations</span>
+				Tools to Streamline
+				<span className="block text-primary"> Operations</span>
 			</>
 		),
 		description: 'Discover the best software solutions to manage your business efficiently.',
@@ -30,7 +30,7 @@ const content = [
 		title: (
 			<>
 				Effective Marketing{' '}
-				<span className="block text-primary">Strategies for Growth</span>{' '}
+				<span className="block text-primary">Strategies</span>{' '}
 			</>
 		),
 		description:
@@ -83,7 +83,7 @@ const HeroSection = () => {
 	}
 
 	return (
-		<section className="relative flex flex-col items-center overflow-hidden bg-silver gap-10 px-5 md:px-10 pt-20 pb-8 md:pt-36 lg:px-16">
+		<section className="relative flex flex-col items-center overflow-hidden bg-silver gap-10 px-5 md:px-10 pt-12 pb-8 md:pt-36 lg:px-16">
 			<motion.div
 				drag="x"
 				dragConstraints={{
@@ -119,15 +119,15 @@ const Content = ({ contentIndex }: { contentIndex: number }) => {
 							scale: contentIndex === idx ? 0.95 : 0.85
 						}}
 						transition={SPRING_OPTIONS}
-						className=" flex w-screen lg:flex-shrink-0 items-center over-flow-hidden"
+						className=" flex w-full flex-shrink-0 items-center overflow-hidden"
 					>
-						<div className=" mx-auto flex flex-col lg:flex-row max-w-7xl w-full items-center justify-center gap-10 lg:justify-between">
+						<div className=" mx-auto flex flex-col lg:flex-row lg:max-w-7xl max-w-[280px]  w-full items-center justify-center gap-10 lg:justify-between ">
 							<div className="items-center flex flex-col justify-center gap-10 lg:items-start lg:justify-start overflow-hidden">
 								<div className="items-center lg:text-left text-center flex flex-col justify-center gap-3  lg:items-start lg:justify-start">
 									<Heading as="h1" type="h1" className="text-darkGrey">
 										{item.title}
 									</Heading>
-									<Paragraph type="para-2" className="text-lightGrey">
+									<Paragraph type="para-2" className="text-lightGrey ">
 										{item.description}
 									</Paragraph>
 								</div>
