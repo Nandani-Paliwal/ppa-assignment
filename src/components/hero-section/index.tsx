@@ -100,7 +100,7 @@ const HeroSection = () => {
 				onDragEnd={onDragEnd}
 				className="flex cursor-grab items-center active:cursor-grabbing"
 			>
-				<Content contentIndex={contentIndex} />
+				<Content />
 			</motion.div>
 
 			<Dots contentIndex={contentIndex} setContentIndex={setContentIndex} />
@@ -108,7 +108,7 @@ const HeroSection = () => {
 	)
 }
 
-const Content = ({ contentIndex }: { contentIndex: number }) => {
+const Content = () => {
 	return (
 		<>
 			{content.map((item, idx) => {
