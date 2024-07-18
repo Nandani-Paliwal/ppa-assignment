@@ -5,25 +5,25 @@ import { Heading } from '../design-system/heading'
 export default function Portfolio() {
 	const logoList = [
 		{
-			logo: '/assets/portfolio-logo/logo1.svg'
+			logo: '/assets/client-logo/logo1.svg'
 		},
 		{
-			logo: '/assets/portfolio-logo/logo2.svg'
+			logo: '/assets/client-logo/logo2.svg'
 		},
 		{
-			logo: '/assets/portfolio-logo/logo3.svg'
+			logo: '/assets/client-logo/logo3.svg'
 		},
 		{
-			logo: '/assets/portfolio-logo/logo4.svg'
+			logo: '/assets/client-logo/logo4.svg'
 		},
 		{
-			logo: '/assets/portfolio-logo/logo5.svg'
+			logo: '/assets/client-logo/logo5.svg'
 		},
 		{
-			logo: '/assets/portfolio-logo/logo6.svg'
+			logo: '/assets/client-logo/logo6.svg'
 		},
 		{
-			logo: '/assets/portfolio-logo/logo7.svg'
+			logo: '/assets/client-logo/logo3.svg'
 		}
 	]
 
@@ -44,8 +44,8 @@ export default function Portfolio() {
 						<Image
 							src={item.logo}
 							alt="client logo"
-							height={1000}
-							width={1000}
+							height={48}
+							width={48}
 							className="h-10 w-auto"
 							key={index}
 						/>
@@ -60,8 +60,8 @@ export default function Portfolio() {
 							<Image
 								src={logoitem.logo}
 								alt="client-logo"
-								height={1000}
-								width={1000}
+								height={48}
+								width={48}
 								className="h-10 w-auto"
 							/>
 						</div>
@@ -73,8 +73,8 @@ export default function Portfolio() {
 							<Image
 								src={logoitem.logo}
 								alt="client-logo"
-								height={1000}
-								width={1000}
+								height={48}
+								width={48}
 								className="h-10 w-auto"
 							/>
 						</div>

@@ -11,12 +11,12 @@ const Feature: React.FC<{ title: string; description: string; image: string }> =
 }) => {
 	return (
 		<section className="mx-auto flex max-w-7xl items-center px-5 py-8 md:px-10  md:py-20 lg:px-16">
-			<div className="flex w-full flex-col lg:items-center gap-5 lg:justify-between lg:flex-row">
+			<div className="flex w-full flex-col items-center justify-center gap-5 lg:justify-between lg:flex-row">
 				<div className="">
 					<Image src={image} alt="" height={328} width={441} />
 				</div>
-				<div className="flex flex-col items-start justify-start gap-8">
-					<div className='flex flex-col gap-4'>
+				<div className="flex flex-col justify-center items-center lg:items-start lg:justify-starttart gap-8 text-center lg:text-left">
+					<div className='flex flex-col gap-4  justify-center items-center lg:items-start lg:justify-starttart'>
 						<Heading as="h2" type="h2" className="text-darkGrey max-w-xl">
 							{title}
 						</Heading>
