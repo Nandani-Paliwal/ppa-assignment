@@ -33,7 +33,7 @@ export default function Portfolio() {
 				<Heading as="h2" type="h2" className=" text-darkGrey dark:text-white">
 					Our Clients
 				</Heading>
-				<Paragraph type="para-2" className="text-grey  ">
+				<Paragraph type="para-2" className="text-grey">
 					We have been working with some Fortune 500+ clients
 				</Paragraph>
 			</div>

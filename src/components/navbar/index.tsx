@@ -96,7 +96,7 @@ export default function Navbar() {
 					
 					<div className="-my-2 -mr-2 lg:hidden flex gap-2 items-center justify-between">
 						<Popover.Button
-							className="active:stroke-secondary-900 relative z-[999]  inline-flex items-center rounded-lg bg-gray-200 stroke-secondary p-2 hover:stroke-darkGrey dark:bg-black/90 dark:stroke-white dark:hover:bg-black/50 [&:not(:focus-visible)]:focus:outline-none"
+							className="active:stroke-secondary-900 relative z-[999]  inline-flex items-center rounded-lg hover:bg-gray-200 stroke-secondary p-2 hover:stroke-darkGrey  dark:stroke-white dark:hover:bg-black/50 [&:not(:focus-visible)]:focus:outline-none"
 							aria-label="Toggle site navigation"
 						>
 							<span className="sr-only">Open menu</span>
@@ -150,7 +150,7 @@ export default function Navbar() {
 								</div>
 								<div className="-mr-2">
 									<Popover.Button
-										className="active:stroke-secondary-900 bg-buttonbg relative z-10 inline-flex items-center rounded-lg bg-gray-200 stroke-secondary p-2 dark:bg-black/90 dark:stroke-white  dark:hover:bg-black/50 [&:not(:focus-visible)]:focus:outline-none"
+										className="active:stroke-secondary-900 bg-buttonbg relative z-10 inline-flex items-center rounded-lg hover:bg-gray-200 stroke-secondary p-2  dark:stroke-white  dark:hover:bg-black/50 [&:not(:focus-visible)]:focus:outline-none"
 										aria-label="Toggle site navigation"
 									>
 										<span className="sr-only">Close menu</span>

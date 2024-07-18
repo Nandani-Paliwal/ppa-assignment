@@ -3,6 +3,7 @@ import Blog from '~/components/blog'
 import CtaSection from '~/components/cta-section'
 import Feature from '~/components/feature-section'
 import Portfolio from '~/components/portfolio-section'
+import StatsSection from '~/components/stats-section'
 import Testimonials from '~/components/testimonials'
 import UspSection from '~/components/usp-section'
 
@@ -16,6 +17,7 @@ export default function Homr(): JSX.Element {
 				title="The unseen of spending three years at Pixelgrade"
 				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio."
 			/>
+      <StatsSection />
 			<Feature
 				image="/assets/feature/pana.svg"
 				title="How to design your site footer like we did"
