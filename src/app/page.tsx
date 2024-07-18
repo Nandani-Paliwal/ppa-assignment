@@ -1,5 +1,6 @@
 import { Federant } from 'next/font/google'
 import Blog from '~/components/blog'
+import CtaSection from '~/components/cta-section'
 import Feature from '~/components/feature-section'
 import Portfolio from '~/components/portfolio-section'
 import Testimonials from '~/components/testimonials'
@@ -22,6 +23,7 @@ export default function Homr(): JSX.Element {
 			/>
 			<Testimonials />
       <Blog />
+      <CtaSection />
 		</main>
 	)
 }

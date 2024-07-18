@@ -16,9 +16,9 @@ const buttonClassVariants = cva(
           "text-primary hover:bg-silver active:bg-primaryTint-5 focus:ring-darkGrey focus:bg-white",
       },
       size: {
-        normal: "rounded px-8 py-4 text-para-l",
-        medium: "rounded px-8 py-[14px] text-para-m",
-        small: "rounded px-6 py-2 text-para-s",
+        normal: "rounded px-4 py-3 md:px-8 md:py-4 text-para-l",
+        medium: "rounded px-4 py-4 md:px-8 md:py-[14px] text-para-m",
+        small: "rounded px-3 py-1 md:px-6 md:py-2 text-para-s",
       },
       fullWidth: {
         true: "w-full justify-center",
