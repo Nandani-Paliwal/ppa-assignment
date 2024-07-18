@@ -16,10 +16,10 @@ const Paragraph: React.FC<ParagraphProps> = ({
   children,
 }) => {
   const ParagraphStyles: { [key: string]: string } = {
-    "para-1": "text-para-1",
-    "para-2": "text-para-2",
-    "para-3": "text-xs md:te1t-para-3",
-    "para-4": "text-para-4",
+    "para-1": "text-para-2 md:text-para-1",
+    "para-2": "text-para-3 md:text-para-2",
+    "para-3": "text-para-4 md:text-xs md:te1t-para-3",
+    "para-4": "text-para-[10px] md:text-para-4",
   };
 
   const weightStyles: { [key: string]: string } = {

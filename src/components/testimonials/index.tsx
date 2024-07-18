@@ -27,8 +27,8 @@ export default function Testimonials() {
 	]
 
 	return (
-		<section className="mx-auto flex max-w-7xl items-center px-5 py-8 md:px-10  md:py-20 lg:px-16">
-			<div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-between">
+		<section className="bg-silver flex items-center px-5 py-8 md:px-10  md:py-20 lg:px-16 overflow-hidden">
+			<div className="mx-auto  max-w-7xl flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-between">
 				<div className="">
 					<Image
 						src="/assets/testimonials/main-image.png"
@@ -39,8 +39,8 @@ export default function Testimonials() {
 					/>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-8 lg:items-start lg:justify-start">
-					<div className="flex flex-col items-center justify-center gap-3 text-center lg:items-start lg:justify-start lg:text-left">
-						<Paragraph type="para-2" className="max-w-3xl font-medium text-grey">
+					<div className="flex flex-col items-center justify-center gap-3 text-center lg:items-start lg:justify-start lg:text-left ">
+						<Paragraph type="para-2" className="lg:max-w-3xl font-medium text-grey">
 							Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
 							sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
 							Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut

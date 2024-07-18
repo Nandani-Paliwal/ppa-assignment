@@ -28,12 +28,12 @@ export default function Portfolio() {
 	]
 
 	return (
-		<div className="mx-auto flex max-w-7xl flex-col gap-6 overflow-hidden px-4 py-16 text-center md:px-6 ">
-			<div className="flex flex-col items-center justify-center  gap-4">
-				<Heading type="h2" className=" text-darkGrey dark:text-white">
+		<div className="mx-auto flex max-w-7xl flex-col gap-10 overflow-hidden px-4 py-16 text-center md:px-6 ">
+			<div className="flex flex-col items-center justify-center text-center gap-4">
+				<Heading as="h2" type="h2" className=" text-darkGrey dark:text-white">
 					Our Clients
 				</Heading>
-				<Paragraph type="para-3" weight="normal" className="text-grey  ">
+				<Paragraph type="para-2" className="text-grey  ">
 					We have been working with some Fortune 500+ clients
 				</Paragraph>
 			</div>

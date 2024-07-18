@@ -181,8 +181,8 @@ export default function UspSection() {
 					</pattern>
 				</defs>
 			</svg>
-			<div className="relative mx-auto flex max-w-lg flex-col gap-5 lg:max-w-7xl">
-				<div className="mx-auto max-w-3xl text-center">
+			<div className="relative mx-auto flex max-w-lg flex-col gap-10 lg:max-w-7xl">
+				<div className="mx-auto max-w-3xl text-center flex flex-col gap-4">
 					<Heading as="h2" type='h2' className="text-darkGrey max-w-xl">
 						Manage your entire community in a single system
 					</Heading>
@@ -190,7 +190,7 @@ export default function UspSection() {
 						Who is Nextcent suitable for?
 					</Paragraph>
 				</div>
-				<div className="flex flex-col items-start justify-evenly divide-x-[1.5px] divide-gray-300/20 pt-12 text-center lg:flex-row">
+				<div className="flex flex-col items-start justify-evenly divide-x-[1.5px] divide-gray-300/20 text-center lg:flex-row">
 					{usp.map(post => (
 						<div
 							key={post.title}
