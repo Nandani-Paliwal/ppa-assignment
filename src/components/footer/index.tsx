@@ -198,8 +198,8 @@ export default function Footer() {
 							))}
 						</div>
 					</div>
-					<div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-						<div className="md:grid md:grid-cols-2 md:gap-8">
+					<div className="mt-12 flex flex-col md:grid md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+						<div className="grid grid-cols-2 md:gap-8">
 							<div>
 								<Heading type="h4" className="text-darkGrey dark:text-white">
 									Company
@@ -220,7 +220,7 @@ export default function Footer() {
 									))}
 								</ul>
 							</div>
-							<div className="mt-12 md:mt-0">
+							<div className="">
 								<Heading type="h4" className="text-darkGrey dark:text-white">
 									Support
 								</Heading>
